@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 cerrarSesion();
             }
         }
+
+        //colocando el icono en el action bar
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
+
     }
     private void cerrarSesion() {
         mGoogleSignInClient.signOut().addOnCompleteListener(this, new OnCompleteListener<Void>() {

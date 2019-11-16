@@ -44,7 +44,7 @@ public class registros extends AppCompatActivity {
         LinearLayout contTemp = (LinearLayout) findViewById(R.id.ContenedorTemp);
         LinearLayout contAxis = (LinearLayout) findViewById(R.id.ContenedorAxis);
         String tempVal = String.valueOf(snapshot.child("temp").getValue());
-        String axisVal = String.valueOf(snapshot.child("axi").getValue());
+        String axisVal = String.valueOf(snapshot.child("axis").getValue());
         TextView temp = new TextView(getApplicationContext());
         temp.setText(tempVal+" C");
         contTemp.addView(temp);
